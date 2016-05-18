@@ -6,6 +6,12 @@
         "colors": [
             {
                 "className": "green"
+            }, 
+            {
+                "className": "grey"
+            },
+            {
+                "className" : "black"
             }
         ]
     }

@@ -4,16 +4,16 @@
 	"hasScript": "yes",
 	"items": [
 	    {
-	        "buttonName" : "Load more",
+	        "buttonName" : "edit",
 	        "className": "button button--primary"
 	    },
 	    {
-	    	"buttonName" : "subscribe",
-	    	"className": "button button--secondary font-quicksand"
+	    	"buttonName" : "save",
+	    	"className": "button button--secondary"
 	    }, 
 	    {
 	    	"buttonName" : "subscribe", 
-	    	"className" : "button button--tertiary font-quicksand"
+	    	"className" : "button button--tertiary"
 	    }
 	]
 }

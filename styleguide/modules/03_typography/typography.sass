@@ -1,50 +1,52 @@
 @import '../10_grid/grid.sass'
+@import '../02_colors/colors.sass'
 body
-	:font-family 'Montserrat' !important
+	:font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
+	:color $black
+h1, h2, h3
+	:font-weight 400	
 
 h1
-	:font-size 80px
-	:font-weight 400
+	:font-size 32px
 	:line-height 1.2
 	+display-for(xs)
 		:font-size 40px
 h2
-	:font-size 48px
+	:font-size 28px
 	:line-height 1.2
 	+display-for(xs)
 		:font-size 32px
 h3
 	:font-size 20px
 	:line-height 1.3
-	:font-weight 400
 
 p
 	:font-size 16px
 	:line-height 1.6
-	:color gray
 
-p.small
+p.small, 
+a.small
 	:font-size 13px
 
-.font-llc
-	:font-family 'Montserrat', 'Helvetica', sans-serif
 
-.font-quicksand
-	:font-family 'Quicksand', 'Helvetica', sans-serif
+
 
 .bold
 	:font-weight 700
 
 .italic
 	:font-style italic
+
 .center
 	:text-align center
 a
-	:color #333
+	:color $black
+	:cursor pointer
+	:text-decoration none
 	&:hover
 		:background transparent
 		:text-decoration none !important
-		:color lighten(#333, 10%)
+		:color lighten($black, 10%)
 
 
 

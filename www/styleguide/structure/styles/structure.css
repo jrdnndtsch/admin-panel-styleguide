@@ -1580,7 +1580,7 @@ p.huge-module__paragraph {
 }
 
 p.huge-module__paragraph a {
-    color: #ec008c
+    color: #78D18B
 }
 
 .huge-module__title--small {
@@ -1814,7 +1814,7 @@ body.opened .huge-header {
     text-align: center;
     height: 63px;
     width: 63px;
-    background-color: #ec008c;
+    background-color: #78D18B;
     padding: 20px 0 10px 0;
     z-index: 10;
     position: absolute
@@ -1912,7 +1912,7 @@ body.opened .huge-header {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     line-height: 1.5;
-    border-left: 0 solid #ec008c;
+    border-left: 0 solid #78D18B;
     outline: none;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease
@@ -1920,10 +1920,10 @@ body.opened .huge-header {
 
 .huge-sidebar__nav__item__link:hover,
 .huge-sidebar__nav__item__link.active {
-    color: #ec008c;
+    color: #78D18B;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    border-left: 4px solid #ec008c
+    border-left: 4px solid #78D18B
 }
 
 body.opened .huge-sidebar__content {

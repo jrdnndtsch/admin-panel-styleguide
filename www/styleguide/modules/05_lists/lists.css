@@ -1,3 +1,40 @@
+.green {
+    background: #78D18B
+}
+
+.grey {
+    background: #F9F9F9
+}
+
+.black {
+    background: #242424
+}
+
+#colors li {
+    position: relative;
+    padding: 0;
+    margin-bottom: 0.9375em
+}
+
+#colors li p {
+    position: absolute;
+    padding: 3px 13px;
+    color: #666;
+    background-color: #fff;
+    font-size: 12px;
+    bottom: 0;
+    left: 0.9375em
+}
+
+#colors li .color {
+    height: 120px;
+    margin-right: 0.9375em
+}
+
+#colors li:last-child {
+    margin-right: 0
+}
+
 ol,
 ul {
     margin: 0 0 12px 0;
@@ -14,7 +51,7 @@ ul.list li:before {
     content: '•';
     font-size: 24px;
     top: 0;
-    color: #00a076;
+    color: #78D18B;
     position: absolute;
     left: 0;
     line-height: 30px
@@ -31,29 +68,5 @@ ol.list li:before {
     position: absolute;
     top: 0;
     left: 0;
-    color: #00a076
-}
-
-ul.list--tags .title {
-    display: block;
-    background: transparent!important;
-    color: #333;
-    padding: 0;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    font-size: 20px
-}
-
-ul.list--tags li {
-    padding: 4px 6px;
-    background: #00a076;
-    color: white;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-right: 4px;
-    margin-bottom: 4px
-}
-
-ul.list--tags li:last-of-type {
-    margin-right: 0
+    color: #78D18B
 }

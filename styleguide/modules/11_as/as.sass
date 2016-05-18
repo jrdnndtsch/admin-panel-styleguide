@@ -1,66 +1,8 @@
-@import '../10_grid/grid.sass'
-$green : #00a076
-.as--home-form
-  select
-    :width 100%
-    :background $green
-    :color white
-    :font-size 18px
-    :font-weight bold
-    :text-transform uppercase
-    :box-shadow -2px 2px 0 0 lighten($green, 10%)
-
-  .select
-    :position relative
-    :width 30%
-    :margin-right 5%
-    :margin-bottom 70px
-    &:nth-of-type(3n + 3)
-      :margin-right 0
-    +display-for(md sm xs)
-      :width 100%
-      :margin-right 0
-      :margin-bottom 30px
-    &:after
-      :content '\25BC'
-      :position absolute
-      :right 14px
-      :top 34%
-      :color white
-      :font-size 12px
-      :pointer-events none
-
-  input[type=submit]
-    :display block
-    :width 100%
-    :margin-bottom 70px
-.wrapper.as--home-intro
-  :padding 50px 0 70px 0
-  p
-    :max-width 700px
-    :margin 0 auto
-.as--search-results
-  :margin-bottom 60px
-
-
-.as--profile-avatar
-  :border-radius 50%
-  :width 100px
-  :height 100px
-  :border 2px solid rgba(0,0,0,0.2)
-  :margin 0 auto
-  :display block
-
-.as--underlined
-  :border-bottom 1px solid #bbb
-  :padding-bottom 10px
-.as--no-top-margin
-  :margin-top 0
-.wrapper.as--lesson-wrapper
-  :margin-top 30px
-  :margin-bottom 30px
-  +display-for(xs)
-    :width 100% !important
-
-label[for=user_remember_me]
-  :margin-left 25px
+.as--no-margin-bottom
+  :margin-bottom 0px
+.as--admin-index-title
+  h1 
+    :width calc(100% - 200px) 
+  h1, a 
+    :display inline-block
+    :vertical-align middle 

@@ -1,12 +1,11 @@
 @import '../02_colors/colors.sass'
-$black : #333
 
 .button
 	:cursor pointer
 	:text-decoration none
 	:display inline-block
-	:font-weight bold
 	:text-align center
+	:font-weight bold
 	:color $black
 	:border 1px solid $black
 	:background transparent
@@ -19,19 +18,34 @@ $black : #333
 .button--primary
 	:font-size 10px
 	:text-transform uppercase
-	:color $black
 	:border 2px solid $black
 	:border-radius 3px
 	:padding 5px 14px
 	:line-height 15px
-	:background white
+	:background white	
+
 
 .button--secondary
 	:border 2px solid $black
 	:border-radius 5px
 	:text-transform uppercase
-	:padding 10px 12px
-	:font-size 20px
+	:padding 4px 12px
+	:font-size 16px
+	:min-width 120px
+	:letter-spacing 1.2px
+.button--secondary, 
+.button--primary
+	&:hover
+		:border 2px solid lighten($black, 10%)	
+
+.button--edit
+	:background lightblue
+	:border 2px solid lightblue	
+	:color $black
+	:margin-right 12px
+	&:hover
+		:background lighten(lightblue, 5%)	
+		:border 2px solid lighten(lightblue, 5%)
 
 .button--tertiary
 	:background $green
@@ -40,7 +54,10 @@ $black : #333
 	:padding 6px
 	:border none
 	:border-radius 5px
-	:border 1px solid $green
+	:border 2px solid $green
+	:font-weight normal
+	:width 190px
+
 .button--large
 	:padding 10px 12px
 	:font-size 20px

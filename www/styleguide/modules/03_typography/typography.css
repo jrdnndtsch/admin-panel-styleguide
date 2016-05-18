@@ -151,13 +151,56 @@ img {
     max-width: 100%
 }
 
+.green {
+    background: #78D18B
+}
+
+.grey {
+    background: #F9F9F9
+}
+
+.black {
+    background: #242424
+}
+
+#colors li {
+    position: relative;
+    padding: 0;
+    margin-bottom: 0.9375em
+}
+
+#colors li p {
+    position: absolute;
+    padding: 3px 13px;
+    color: #666;
+    background-color: #fff;
+    font-size: 12px;
+    bottom: 0;
+    left: 0.9375em
+}
+
+#colors li .color {
+    height: 120px;
+    margin-right: 0.9375em
+}
+
+#colors li:last-child {
+    margin-right: 0
+}
+
 body {
-    font-family: 'Montserrat'!important
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #242424
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400
 }
 
 h1 {
-    font-size: 80px;
-    font-weight: 400;
+    font-size: 32px;
     line-height: 1.2
 }
 
@@ -168,7 +211,7 @@ h1 {
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 28px;
     line-height: 1.2
 }
 
@@ -180,26 +223,17 @@ h2 {
 
 h3 {
     font-size: 20px;
-    line-height: 1.3;
-    font-weight: 400
+    line-height: 1.3
 }
 
 p {
     font-size: 16px;
-    line-height: 1.6;
-    color: gray
+    line-height: 1.6
 }
 
-p.small {
+p.small,
+a.small {
     font-size: 13px
-}
-
-.font-llc {
-    font-family: 'Montserrat', 'Helvetica', sans-serif
-}
-
-.font-quicksand {
-    font-family: 'Quicksand', 'Helvetica', sans-serif
 }
 
 .bold {
@@ -215,13 +249,15 @@ p.small {
 }
 
 a {
-    color: #333
+    color: #242424;
+    cursor: pointer;
+    text-decoration: none
 }
 
 a:hover {
     background: transparent;
     text-decoration: none!important;
-    color: #4d4d4d
+    color: #3e3e3e
 }
 
 #typography h1,

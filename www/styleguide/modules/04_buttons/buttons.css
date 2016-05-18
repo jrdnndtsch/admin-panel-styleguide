@@ -1,9 +1,13 @@
 .green {
-    background: #00a076
+    background: #78D18B
 }
 
-.red {
-    background: red
+.grey {
+    background: #F9F9F9
+}
+
+.black {
+    background: #242424
 }
 
 #colors li {
@@ -35,10 +39,10 @@
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    font-weight: bold;
     text-align: center;
-    color: #333;
-    border: 1px solid #333;
+    font-weight: bold;
+    color: #242424;
+    border: 1px solid #242424;
     background: transparent;
     -webkit-transition: background-color 0.3s, opacity 0.3s;
     transition: background-color 0.3s, opacity 0.3s;
@@ -48,8 +52,7 @@
 .button--primary {
     font-size: 10px;
     text-transform: uppercase;
-    color: #333;
-    border: 2px solid #333;
+    border: 2px solid #242424;
     border-radius: 3px;
     padding: 5px 14px;
     line-height: 15px;
@@ -57,21 +60,29 @@
 }
 
 .button--secondary {
-    border: 2px solid #333;
+    border: 2px solid #242424;
     border-radius: 5px;
     text-transform: uppercase;
-    padding: 10px 12px;
-    font-size: 20px
+    padding: 4px 12px;
+    font-size: 16px;
+    min-width: 120px;
+    letter-spacing: 1.2px
+}
+
+.button--secondary:hover,
+.button--primary:hover {
+    border: 2px solid #3e3e3e
 }
 
 .button--tertiary {
-    background: #00a076;
+    background: #78D18B;
     color: white;
     text-transform: uppercase;
     padding: 6px;
     border: none;
     border-radius: 5px;
-    border: 1px solid #00a076
+    border: 2px solid #78D18B;
+    font-weight: normal
 }
 
 .button--large {

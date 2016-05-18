@@ -6,24 +6,21 @@
         "fonts": [
             {
                 "heading": "1",
-                "fontName" : "Quicksand",
-                "fontSize": "60px",
-                "className": "font-quicksand",
+                "fontName": "Helvetica",
+                "fontSize": "32px",
                 "title": "Get Started"
             },
             {
                 "heading": "2",
-                "fontName" : "Montserrat Bold",
-                "fontSize": "48px",
-                "className": "font-llc bold",
-                "title": "Telling Stories with Scratch"
+                "fontName": "Helvetica", 
+                "fontSize": "28px",
+                "title": "Edit the Post"
             },
             {
                 "heading": "3",
-                "fontName" : "Monserrat Normal",
+                "fontName": "Helvetica",
                 "fontSize": "20px",
-                "className": "font-llc",
-                "title": "Is this lesson for you?"
+                "title": "Pick three posts to feature"
             }
         ],
         "paragraphsName": "Paragraphs",

@@ -1,4 +1,4 @@
-$green : #00a076
+@import '../02_colors/colors.sass'
 
 ol, ul
 	:margin 0 0 12px 0
@@ -28,62 +28,6 @@ ol.list
 			:left 0
 			:color $green
 
-ul.list--tags
-	.title
-		:display block
-		:background transparent !important
-		:color #333
-		:padding 0
-		:text-transform capitalize
-		:margin-bottom 10px
-		:font-size 20px
-	li
-		:padding 4px 6px
-		:background $green
-		:color white
-		:text-transform uppercase
-		:display inline-block
-		:margin-right 4px
-		:margin-bottom 4px
-		&:last-of-type
-			:margin-right 0
 
-// ol, ul {
-// 	list-style: none;
-// 	margin: 0 0 2em 0;
-// 	padding: 0;
-// }
 
-// ul.list_huge {
-// 	li {
-// 		padding-left: 20px;
-// 		position: relative;
 
-// 		&::before {
-// 			content: '·';
-// 			font-size: 11px;
-// 			top: 4px;
-// 			color: $magenta;
-// 			position: absolute;
-// 			left: 0;
-// 		}
-// 	}
-// }
-
-// ol.list_huge {
-// 	counter-reset: item;
-
-// 	li {
-// 		padding-left: 30px;
-// 		position: relative;
-
-// 		&::before {
-// 			content: counters(item,".") " ";
-// 			counter-increment: item;
-// 			top: 0;
-// 			color: $magenta;
-// 			position: absolute;
-// 			left: 0;
-// 		}
-// 	}
-// }

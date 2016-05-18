@@ -1,9 +1,13 @@
 .green {
-    background: #00a076
+    background: #78D18B
 }
 
-.red {
-    background: red
+.grey {
+    background: #F9F9F9
+}
+
+.black {
+    background: #242424
 }
 
 #colors li {
