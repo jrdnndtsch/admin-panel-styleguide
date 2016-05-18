@@ -1,6 +1,6 @@
 @import '../02_colors/colors.sass'
 
-.button
+=button 
 	:cursor pointer
 	:text-decoration none
 	:display inline-block
@@ -14,8 +14,7 @@
 	:-o-transition background-color 0.3s,opacity 0.3s
 	:transition background-color 0.3s,opacity 0.3s
 	:margin-bottom 16px
-
-.button--primary
+=button--primary
 	:font-size 10px
 	:text-transform uppercase
 	:border 2px solid $black
@@ -23,7 +22,19 @@
 	:padding 5px 14px
 	:line-height 15px
 	:background white	
+=button--delete
+	:background lightcoral
+	:border 2px solid lightcoral	
+	:color white
+	&:hover
+		:color white
+		:background lighten(lightcoral, 5%)	
+		:border 2px solid lighten(lightcoral, 5%)	
+.button
+	+button
 
+.button--primary
+	+button--primary	
 
 .button--secondary
 	:border 2px solid $black
@@ -46,6 +57,8 @@
 	&:hover
 		:background lighten(lightblue, 5%)	
 		:border 2px solid lighten(lightblue, 5%)
+.button--delete
+	+button--delete					
 
 .button--tertiary
 	:background $green
@@ -56,11 +69,14 @@
 	:border-radius 5px
 	:border 2px solid $green
 	:font-weight normal
-	:width 190px
+	:min-width 190px
 
 .button--large
-	:padding 10px 12px
-	:font-size 20px
+	:width 190px
+.remove_fields
+	+button 
+	+button--primary	
+	+button--delete	
 
 #buttons
 	.button
