@@ -74,6 +74,30 @@
     border: 2px solid #3e3e3e
 }
 
+.button--edit {
+    background: lightblue;
+    border: 2px solid lightblue;
+    color: #242424;
+    margin-right: 12px
+}
+
+.button--edit:hover {
+    background: #c1e1ec;
+    border: 2px solid #c1e1ec
+}
+
+.button--delete {
+    background: lightcoral;
+    border: 2px solid lightcoral;
+    color: white
+}
+
+.button--delete:hover {
+    color: white;
+    background: #f39797;
+    border: 2px solid #f39797
+}
+
 .button--tertiary {
     background: #78D18B;
     color: white;
@@ -82,12 +106,42 @@
     border: none;
     border-radius: 5px;
     border: 2px solid #78D18B;
-    font-weight: normal
+    font-weight: normal;
+    min-width: 190px
 }
 
 .button--large {
-    padding: 10px 12px;
-    font-size: 20px
+    width: 190px
+}
+
+.remove_fields {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: #242424;
+    border: 1px solid #242424;
+    background: transparent;
+    -webkit-transition: background-color 0.3s, opacity 0.3s;
+    transition: background-color 0.3s, opacity 0.3s;
+    margin-bottom: 16px;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 2px solid #242424;
+    border-radius: 3px;
+    padding: 5px 14px;
+    line-height: 15px;
+    background: white;
+    background: lightcoral;
+    border: 2px solid lightcoral;
+    color: white
+}
+
+.remove_fields:hover {
+    color: white;
+    background: #f39797;
+    border: 2px solid #f39797
 }
 
 #buttons .button {

@@ -8,6 +8,11 @@ html {
     box-sizing: inherit
 }
 
+body {
+    margin: 0;
+    letter-spacing: 0.5px
+}
+
 @media screen and (min-width:1170px) {
     .wrapper {
         width: 1146px
@@ -101,6 +106,10 @@ html {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap

@@ -8,6 +8,11 @@ html {
     box-sizing: inherit
 }
 
+body {
+    margin: 0;
+    letter-spacing: 0.5px
+}
+
 @media screen and (min-width:1170px) {
     .wrapper {
         width: 1146px
@@ -101,6 +106,10 @@ html {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap
@@ -151,6 +160,61 @@ img {
     max-width: 100%
 }
 
+.green {
+    background: #78D18B
+}
+
+.grey {
+    background: #F9F9F9
+}
+
+.black {
+    background: #242424
+}
+
+#colors li {
+    position: relative;
+    padding: 0;
+    margin-bottom: 0.9375em
+}
+
+#colors li p {
+    position: absolute;
+    padding: 3px 13px;
+    color: #666;
+    background-color: #fff;
+    font-size: 12px;
+    bottom: 0;
+    left: 0.9375em
+}
+
+#colors li .color {
+    height: 120px;
+    margin-right: 0.9375em
+}
+
+#colors li:last-child {
+    margin-right: 0
+}
+
+.form--contained {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+@media screen and (min-width:500px) and (max-width:767px) {
+    .form--contained {
+        width: 90%
+    }
+}
+
+@media screen and (max-width:499px) {
+    .form--contained {
+        width: 90%
+    }
+}
+
 select {
     padding: 10px 20px;
     -webkit-appearance: none;
@@ -158,86 +222,31 @@ select {
     appearance: none;
     border: none;
     font-size: 14px;
-    background: lightgrey;
-    border-radius: 5px
+    background: #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 16px
 }
 
-input {
+input,
+textarea,
+fieldset {
     width: 100%;
     padding: 6px 4px;
-    border: 1px solid #333;
+    border: 1px solid #d3d3d3;
     border-radius: 5px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    font-size: 16px
 }
 
-input[type=checkbox] {
-    width: auto
-}
-
-.hint {
-    margin-top: -10px;
-    display: block;
-    margin-bottom: 10px
-}
-
-.wrapper.form--new-lesson {
-    border-radius: 5px;
-    background: white;
-    margin-top: 30px;
-    margin-bottom: 30px
-}
-
-.wrapper.form--new-lesson textarea {
-    height: 300px;
-    border: 1px solid #333;
-    border-radius: 5px
-}
-
-.wrapper.form--new-lesson input[type=submit] {
-    border: none
-}
-
-.wrapper.form--new-lesson img {
-    margin-bottom: 16px
-}
-
-.wrapper.form--new-lesson .textarea-description textarea {
+textarea {
     height: 200px
 }
 
-.wrapper.form--new-lesson .textarea-content textarea {
-    height: 700px
+input[type=checkbox] {
+    width: auto;
+    margin-bottom: 16px
 }
 
-.wrapper.form--new-lesson .wrapper--flex {
-    border-radius: 5px
-}
-
-.wrapper.form--new-lesson .content {
-    width: 70%;
-    padding: 25px
-}
-
-.wrapper.form--new-lesson .sidebar {
-    padding: 25px;
-    border-top-right-radius: 5px
-}
-
-@media screen and (min-width:500px) and (max-width:767px) {
-    .wrapper.form--new-lesson .sidebar {
-        border-top-right-radius: 0
-    }
-}
-
-@media screen and (max-width:499px) {
-    .wrapper.form--new-lesson .sidebar {
-        border-top-right-radius: 0
-    }
-}
-
-.wrapper.form--new-lesson .sidebar .levels input {
-    margin: 0;
-    width: 10%;
-    text-align: left;
-    margin-bottom: 10px
+fieldset {
+    padding: 20px 20px 0 20px
 }

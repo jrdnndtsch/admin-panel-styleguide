@@ -1,53 +1,74 @@
+.green {
+    background: #78D18B
+}
+
+.grey {
+    background: #F9F9F9
+}
+
+.black {
+    background: #242424
+}
+
+#colors li {
+    position: relative;
+    padding: 0;
+    margin-bottom: 0.9375em
+}
+
+#colors li p {
+    position: absolute;
+    padding: 3px 13px;
+    color: #666;
+    background-color: #fff;
+    font-size: 12px;
+    bottom: 0;
+    left: 0.9375em
+}
+
+#colors li .color {
+    height: 120px;
+    margin-right: 0.9375em
+}
+
+#colors li:last-child {
+    margin-right: 0
+}
+
 table {
+    width: 100%;
     border-collapse: collapse;
-    border-spacing: 0;
-    empty-cells: show;
-    border: 1px solid #cbcbcb
-}
-
-table caption {
-    color: #000;
-    font: italic 85%/1 arial, sans-serif;
-    padding: 1em 0;
-    text-align: center
-}
-
-table td,
-table th {
-    border-left: 1px solid #cbcbcb;
-    border-width: 0 0 0 1px;
-    font-size: inherit;
-    margin: 0;
-    overflow: visible;
-    padding: .5em 1em
+    border-spacing: 0
 }
 
 table th {
-    font-family: 'HUGEAvantGardeBold', Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    border-bottom: 1px solid #cbcbcb
-}
-
-table td:first-child,
-table th:first-child {
-    border-left-width: 0
-}
-
-table thead {
-    background: #e0e0e0;
-    color: #000;
     text-align: left;
-    vertical-align: bottom
+    padding: 6px 0
 }
 
-table tr:nth-child(2n-1) td {
-    background-color: #f8f8f8
+table tr {
+    background: white;
+    border-bottom: 1.5px solid #e0e0e0
+}
+
+table tbody tr:hover {
+    background: #F9F9F9
 }
 
 table td {
-    border-bottom: 1px solid #cbcbcb
+    padding: 10px 0
 }
 
-#tables table {
-    width: 90%
+table img {
+    width: 50px;
+    padding: 6px 0;
+    display: block
+}
+
+table .table--image {
+    width: 100px
+}
+
+table .table--button {
+    text-align: right
 }

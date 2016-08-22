@@ -35,15 +35,23 @@
     margin-right: 0
 }
 
-.sidebar {
-    width: 230px;
-    background: #242424
+#admin--only .sidebar {
+    height: 100%;
+    position: fixed
 }
 
-.sidebar a {
+.sidebar {
+    width: 230px;
+    background: #242424;
+    position: relative
+}
+
+.sidebar a,
+.sidebar p,
+.sidebar span {
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
-    padding: 10px 12px;
+    padding: 16px 12px;
     display: block
 }
 
@@ -56,20 +64,42 @@
     color: white
 }
 
-.sidebar--header {
+.sidebar .sidebar--header {
     background: #78D18B;
-    color: #242424
+    padding: 18px 12px;
+    text-transform: uppercase
 }
 
-.sidebar--header:hover {
+.sidebar .sidebar--header:hover {
     background: #8bd79b
+}
+
+.sidebar .sidebar--user {
+    position: absolute;
+    bottom: 12px
+}
+
+.sidebar .sidebar--user a,
+.sidebar .sidebar--user span {
+    padding: 6px 12px
+}
+
+#admin--only .breadcrumb {
+    position: fixed;
+    margin-left: 230px
 }
 
 .breadcrumb {
     width: calc(100% - 230px);
-    padding: 10px;
+    padding: 18px 10px;
     font-size: 14px;
-    background: #F9F9F9
+    background: #F9F9F9;
+    text-transform: uppercase
+}
+
+.breadcrumb span {
+    color: #242424;
+    padding: 0 10px
 }
 
 .breadcrumb span:after {
@@ -79,4 +109,31 @@
 
 .breadcrumb span:last-of-type:after {
     content: ''
+}
+
+.breadcrumb a {
+    padding: 0 10px
+}
+
+.admin--content {
+    width: calc(100% - 230px);
+    padding: 12px;
+    padding-top: 60px;
+    margin-left: 230px
+}
+
+.admin--module {
+    background: #F9F9F9;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 16px
+}
+
+.admin--module p {
+    margin-top: 0
+}
+
+.admin--module li {
+    margin-bottom: 4px
 }
